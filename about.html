@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/about.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <title>Chronic Kidney Diseases</title>
+    <link rel="icon" href="{{url_for('static', filename='images/logo.png')}}">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg navbar-dark fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse_Navbar">
+            <span class="fas fa-angle-double-right naw"></span>
+        </button>
+
+        <a href="{{ url_for('first') }}">
+            <img src="{{url_for('static', filename='images/nav_logo.png')}}" class="logo">
+        </a>
+        <div class="collapse navbar-collapse" id="collapse_Navbar">
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('first') }}"
+                        style="color: aliceblue; font-size: 20px; font-family: fantasy;">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('about') }}"
+                        style="color: aliceblue; font-size: 20px; font-family: fantasy;">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('model') }}"
+                        style="color: aliceblue; font-size: 20px; font-family: fantasy;">Model</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('precautions') }}"
+                        style="color: aliceblue; font-size: 20px; font-family: fantasy;">Precautions</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('index') }}"
+                        style="color: aliceblue; font-size: 20px; font-family: fantasy;">Predict</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('chart') }}"
+                        style="color: aliceblue; font-size: 20px; font-family: fantasy;">Analysis <i
+                            class="fas fa-download"></i></a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+
+    <div class="adi">
+        <div class="container">
+            <div class="card card-body" id="first" style="border: 1px solid black; box-shadow: 0 0 10px black;">
+                <h2>ACKNOWLEDGEMENT </h2>
+                <p>We Would like to Express our special thanks of gratitude to our project mentor <strong>Dr Swarnalatha
+                        K S</strong> who gave us a golden opportunity to do this project and also provided consistent
+                    help and support in the completion of the project
+                </p>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="card card-body" style="border: 1px solid black; box-shadow: 0 0 10px black;">
+                <h2>This is basic Machine Learning based WebApp that can predict CHRONIC KIDNEY DISEASE.</h2>
+                <p>These Machine Learning models are trained on large datasets.</p>
+                <br>
+                <h2>Model Accuracies:</h2>
+
+                <br>1)LOGISTIC REGRESSION: <strong>96.25%</strong></li>
+                <br>2)K NEAREST NEIGHBOUR: <strong>96.5%</strong></li>
+                <br>3)ARTIFICIAL NEURAL NETWORKS: <strong>99%</strong></li>
+
+                </ul>
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <div class="row">
+        <div class="col-md-12 card card-body" style="box-shadow: 0 0 5px black; margin: 5px;">
+
+            <h4>Our Team Members</h4>
+            <div class="card" style="width: 25rem; border: 2px solid #035AFA;">
+
+                <img class="card-img-top" src="{{url_for('static', filename='images/aditya.jpeg')}}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"><b>N ADITYA NAYAK</b></h5>
+                    <h6>adityanayak864@gmail.com</h6>
+                    <h6>7624949240</h6>
+                    <p class="card-text"><b>Areas of interest:</b>Machine Learning,Mobile App Development</p>
+                    <div class="btn">
+                        <a href="https://www.linkedin.com/in/n-aditya-nayak-204282194" target="_blank">Portfolio <i
+                                class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 25rem; border: 2px solid #035AFA;">
+
+                <img class="card-img-top" src="{{url_for('static', filename='images/pavan.jpeg')}}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"><b>PAWAN KUMAR</b></h5>
+                    <h6>prempawan98@gmail.com</h6>
+                    <h6>9534114266</h6>
+                    <p class="card-text"><b>Areas of interest:</b>Mobile App Development,Web Development</p>
+                    <div class="btn">
+                        <a href="https://www.linkedin.com/in/pawan-kumar-222132161/" target="_blank">Portfolio <i
+                                class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 25rem; border: 2px solid #035AFA;">
+
+                <img class="card-img-top" src="{{url_for('static', filename='images/pranav.jpeg')}}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"><b>PRANAV T R</b></h5>
+                    <h6>pranavtr88288@gmail.com</h6>
+                    <h6>9481700733</h6>
+                    <p class="card-text"><b>Areas of interest:</b>Cloud computing,Machine Learning</p>
+                    <div class="btn">
+                        <a href="https://www.linkedin.com/in/pranav-tr-1085941a2" target="_blank">Portfolio <i
+                                class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 25rem; border: 2px solid #035AFA;">
+
+                <img class="card-img-top" src="{{url_for('static', filename='images/shubajit.jpeg')}}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"><b>SHUBAJIT DAS</b></h5>
+                    <h6>shubhajitd07@gmail.com</h6>
+                    <h6>9714841983</h6>
+                    <p class="card-text"><b>Areas of interest:</b>Machine Learning,Deep Learning</p>
+                    <div class="btn">
+                        <a href="https://www.linkedin.com/in/shubhajit-das-90519a175" target="_blank">Portfolio <i
+                                class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- Optional JavaScript -->
+            <script type="text/javascript" src="script.js"></script>
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+                integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+                integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+                crossorigin="anonymous"></script>
+
+</body>
+
+</html>
